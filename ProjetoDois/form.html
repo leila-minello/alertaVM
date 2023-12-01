@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Formulário</title>
+</head>
+ 
+<body>
+
+    <!--header-->
+    <nav class="navbar">
+        <p><a href="index.html">Página Inicial</a></p>
+        <img src="imagens/AlertaLogo.png" alt="Logo" width="224" height="64">
+        <a href="#">Sobre</a>
+    </nav>
+
+    <!--todo o espaço do form-->
+    <form class="espacoForm">
+        <label for="nameInput"> </label>
+        <input type="text" placeholder="Nome:"id="nameInput" required>
+
+        <label for="emailInput"> </label>
+        <input type="email" placeholder="E-mail:" id="emailInput" required>
+
+        <label for="ageInput"> </label>
+        <input type="number" placeholder="Idade:" id="ageInput" required>
+
+        <label for="cityInput"> </label>
+        <input type="text" placeholder="Cidade: "id="cityInput" required>
+   
+        <label for="suggestionInput"> </label>
+        <input type="text" placeholder="Deixe uma sugestão curta:" id="suggestionInput" required>
+
+
+        <!--parte dos botões-->
+        <section class="espacoBotoes">
+            <button type="submit" id="cadastrar" class="botaoEnviar">Enviar</button>
+            <button type="button" id="limparCampos" class="botaoLimparCampos">Limpar Campos</button>
+            <button type="button" id="limpar" class="botaoLimpar">Limpar Lista</button>
+        </section>
+
+
+        <!--lista de envios-->
+        <ul id="personList"></ul>
+
+        
+        <!--campo de pesquisa-->
+        <div class="pesquisa-container">
+            <label for="searchInput"></label>
+            <input type="text" placeholder="Pesquisar (nome ou idade)" id="searchInput">
+            <button type="button" id="pesquisar" class="botaoPesquisar">Pesquisar</button>
+            <button type="button" id="limparPesquisa" class="botaoLimparPesquisa">Limpar Pesquisa</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
